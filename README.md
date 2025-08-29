@@ -2,6 +2,40 @@
 
 A modern AI-powered chat application built with **Stream Chat**, **OpenAI**, and **web search capabilities**. This full-stack application provides an intelligent writing assistant that can help with content creation, research, and real-time collaboration.
 
+## 🎥 Demo
+
+![Chat AI App Demo](docs/demo.gif)
+
+Experience intelligent conversations with our AI assistant:
+- Real-time chat with AI responses
+- Dynamic web search integration
+- Smart writing assistance
+- Beautiful dark/light theme interface
+
+## ⚡ Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/jiqbal77/AI-chatbot.git
+cd AI-chatbot
+
+# Start backend
+cd nodejs-ai-assistant
+npm install
+cp .env.example .env
+# Add your API keys to .env
+npm run dev
+
+# Start frontend (in a new terminal)
+cd ../react-stream-ai-assistant
+npm install
+cp .env.example .env
+# Add your API keys to .env
+npm run dev
+```
+
+Visit `http://localhost:8080` to start chatting!
+
 ## 🚀 Features
 
 - **Real-time Chat**: Powered by [GetStream.io](https://getstream.io) for seamless messaging
@@ -12,6 +46,15 @@ A modern AI-powered chat application built with **Stream Chat**, **OpenAI**, and
 - **Agent Management**: Dynamic AI agent lifecycle management
 - **Secure Authentication**: JWT-based token authentication
 - **Responsive Design**: Mobile-first design with Tailwind CSS
+
+## 💻 System Requirements
+
+- **Node.js**: v20.0.0 or higher
+- **Memory**: Minimum 4GB RAM recommended
+- **Storage**: At least 1GB free space
+- **OS**: Windows 10+, macOS 10.15+, or Linux
+- **Browser**: Chrome 90+, Firefox 90+, Safari 14+, Edge 90+
+- **Network**: Stable internet connection required for API services
 
 ## 🏗️ Architecture
 
@@ -43,8 +86,8 @@ A modern AI-powered chat application built with **Stream Chat**, **OpenAI**, and
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd chat-ai-app
+git clone https://github.com/jiqbal77/AI-chatbot.git
+cd AI-chatbot
 ```
 
 ### 2. Backend Setup
@@ -274,6 +317,37 @@ npm run start
 # Frontend
 cd react-stream-ai-assistant
 npm run build
+```
+
+## ❗ Troubleshooting
+
+### Common Issues
+
+1. **Connection Issues**
+   - Ensure all API keys are correctly set in `.env` files
+   - Check if the backend server is running
+   - Verify network connectivity to external services
+
+2. **Authentication Errors**
+   - Clear browser cache and local storage
+   - Check token expiration and refresh mechanism
+   - Verify Stream Chat credentials
+
+3. **AI Agent Not Responding**
+   - Check OpenAI API key and quota
+   - Verify agent initialization status
+   - Check backend logs for errors
+
+4. **Web Search Not Working**
+   - Verify Tavily API key
+   - Check network connectivity
+   - Ensure search quota is not exceeded
+
+### Debug Mode
+
+Enable debug mode by setting:
+```env
+DEBUG=true
 ```
 
 ## 📚 Technologies Used
